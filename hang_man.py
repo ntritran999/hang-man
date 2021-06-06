@@ -5,7 +5,7 @@ with open('words.txt') as f:
 
 word = random.choice(words).upper()    
 
-running = True
+running = True # Feel free to change
 tries = 6
 guess_letters = []
 w_completion = '-' * len(word)
@@ -35,6 +35,7 @@ while running and tries != 0:
     for index in indices:
         word_as_list[index] = guess
     w_completion = ''.join(word_as_list)
+    
     if '-' not in w_completion:
         print()
         print(w_completion)
