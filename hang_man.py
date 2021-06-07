@@ -31,9 +31,9 @@ while running and tries != 0:
         print('INVALID INPUT!\n')
 
     word_as_list = list(w_completion)
-    indices = [i for i, letter in enumerate(word) if letter == guess]
-    for index in indices:
-        word_as_list[index] = guess
+    for i, letter in enumerate(word):
+        if letter == guess:
+            word_as_list[i] = guess
     w_completion = ''.join(word_as_list)
     
     if '-' not in w_completion:
