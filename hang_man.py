@@ -16,7 +16,7 @@ while running and tries != 0:
     print(f"You Have {tries} {'Try' if tries == 1 else 'Tries'} Left.") # Fixing some grammar stuffs
     print(w_completion)
     guess = input('Guess a word or a letter: ').upper()
-    if guess.isalpha() and (len(guess) == 1 or len(guess) == len(word)):
+    if guess.isalpha() and (len(guess) in [1, len(word)]):
         if guess == word:
             print()
             print('----HORRAY. YOU GOT IT!---')
