@@ -5,8 +5,8 @@ with open('words.txt') as f:
 
 word = random.choice(words).upper()    
 
-running = True # Feel free to change
-tries = 6
+running = True 
+tries = 6        # Feel free to change
 guess_letters = []
 w_completion = '-' * len(word)
 
